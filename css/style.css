@@ -2982,9 +2982,23 @@ body {
 }
 
 @media (max-width: 540px) {
+  .main {
+    margin-top: 65px;
+  }
+
+  .header {
+    height: 65px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 9999;
+    box-shadow: #000 1px 0 10px;
+  }
+
   .header-inner {
     flex-wrap: wrap;
-    height: 65px;
   }
 
   .header-inner__menu {
@@ -2998,6 +3012,10 @@ body {
 
   .header-inner__menu.open {
     transform: translateY(20px);
+  }
+
+  .header-inner__menu.open:nth-child(3) {
+    box-shadow: 0 10px 10px -9px #000;
   }
 
   .header-inner__menu-item {
