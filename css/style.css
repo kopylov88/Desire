@@ -1071,26 +1071,23 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 html,
 body {
   height: 100%;
-  overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6875;
   color: #5A5A5A;
+  overflow-x: hidden;
 }
 
 .wrapper {
+  position: relative;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
 }
 
 .main {
-  flex: 1 0 auto;
-}
-
-.footer {
-  flex: 0 0 auto;
+  flex: 1 1 auto;
 }
 
 .container {
@@ -1209,7 +1206,7 @@ body {
 
 .rightside-menu {
   position: absolute;
-  z-index: 9999;
+  z-index: 999;
   top: 0;
   right: -500%;
   bottom: 0;
@@ -1437,7 +1434,7 @@ body {
 }
 
 .nowebp .top__slider {
-  background: url("../img/top-bg.jpg") no-repeat; }
+  background: url("../img/top-bg.jpg") no-repeat top; }
 
 .top__slider {
   padding-bottom: 87px;
@@ -1607,7 +1604,7 @@ body {
 }
 
 .nowebp .aesthetic {
-  background: url("../img/aesthetic.jpg"); }
+  background: url("../img/aesthetic.jpg") no-repeat center; }
 
 .aesthetic {
   position: relative;
@@ -3181,9 +3178,9 @@ body {
   }
 }
 
-.webp .top__slider { background: url(../img/top-bg.webp) no-repeat; }
+.webp .top__slider { background: url(../img/top-bg.webp) no-repeat top; }
 
-.webp .aesthetic { background: url(../img/aesthetic.webp); }
+.webp .aesthetic { background: url(../img/aesthetic.webp) no-repeat center; }
 
 .webp .about__top { background-image: url(../img/about-bg.webp); }
 
