@@ -3011,7 +3011,7 @@ body {
   }
 
   .header-inner__menu.open {
-    transform: translateY(20px);
+    transform: translateY(19px);
   }
 
   .header-inner__menu.open:nth-child(3) {
@@ -3037,7 +3037,10 @@ body {
   }
 
   .header-inner__btn-menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
     background-color: transparent;
     order: -1;
     position: relative;
@@ -3048,10 +3051,22 @@ body {
   .header-inner__btn-menu span {
     display: block;
     background-color: #000;
-    width: 37px;
+    width: 35px;
     height: 3px;
     border-radius: 4px;
-    margin: 6px 0;
+    transition: 0.3s;
+  }
+
+  .header-inner__btn-menu.open span:nth-child(2) {
+    display: none;
+  }
+
+  .header-inner__btn-menu.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .header-inner__btn-menu.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 
   .logo {
