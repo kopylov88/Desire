@@ -2987,7 +2987,6 @@ body {
   }
 
   .header {
-    height: 65px;
     position: fixed;
     top: 0;
     left: 0;
@@ -2998,6 +2997,7 @@ body {
   }
 
   .header-inner {
+    height: 65px;
     flex-wrap: wrap;
   }
 
